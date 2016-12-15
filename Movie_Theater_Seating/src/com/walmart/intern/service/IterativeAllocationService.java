@@ -72,7 +72,7 @@ public class IterativeAllocationService implements AllocationService{
 	 * @param noOfSeats
 	 * @param output
 	 */
-	private void selectBestSeatForReq(ReservationRequest reservReq)
+	protected void selectBestSeatForReq(ReservationRequest reservReq)
 	{
 		try
 		{

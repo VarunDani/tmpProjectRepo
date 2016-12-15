@@ -9,8 +9,9 @@ import java.util.Collections;
 import java.util.Comparator;
 
 import com.walmart.intern.model.ReservationRequest;
+import com.walmart.intern.model.Theater;
 
-public class BatchAllocationService implements AllocationService{
+public class BatchAllocationService extends IterativeAllocationService implements AllocationService{
 
 	@Override
 	public StringBuilder allocateSeats(String filePath) {
@@ -29,6 +30,7 @@ public class BatchAllocationService implements AllocationService{
 			
 			output = new StringBuilder();
 			requestList = new ArrayList<ReservationRequest>();
+			seats = Theater.getInstance().getSeats();
 			
 			String line = null;
 			while ((line = br.readLine()) != null) {
@@ -49,7 +51,10 @@ public class BatchAllocationService implements AllocationService{
 			     }
 			});
 			
-			
+			for(ReservationRequest  request : requestList)
+			{
+				selectBestSeatForReq(request);
+			}
 			
 			//Sort Array By Request Id
 			Collections.sort(requestList, new Comparator<ReservationRequest>(){
@@ -58,7 +63,11 @@ public class BatchAllocationService implements AllocationService{
 			     }
 			});
 			
-
+			for(ReservationRequest  request : requestList)
+			{
+				output.append(request.getOutputString());
+				output.append("\n");
+			}
 			
 			
 		}
