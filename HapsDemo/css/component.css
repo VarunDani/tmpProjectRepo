@@ -56,14 +56,14 @@ html, body, .container, .header {
 
 .title h1 {
 	padding: 0 0 0.2em;
-	color: #fff;
 	font-weight: 800;
 	font-size: 3.25em;
 	margin: 0 auto;
 }
-
-.title p {
+.white {
 	color: #fff;
+}
+.title p {
 	padding: 0 0 0.6em;
 	font-weight: 300;
 	font-size: 0.85em;
@@ -1341,9 +1341,9 @@ button.trigger span::before {
 }
 
 .pricing--pema .pricing__price {
-	font-size: 2.5em;
+	font-size: 1.7em;
 	font-weight: 800;
-	color: #6ed19c;
+	color: #42a5f5;
 	position: relative;
 	z-index: 100;
 }
@@ -1357,15 +1357,14 @@ button.trigger span::before {
 	font-size: 0.23em;
 	display: inline-block;
 	padding: 0 0 0 0.5em;
-	color: #CEDED6;
+	color: #42a5f5;
 }
 
 .pricing--pema .pricing__sentence {
-	font-size: 0.80em;
+	font-size: 0.60em;
 	font-weight: bold;
 	margin: 0 0 0.5em 0;
-	padding: 0 0 0.5em;
-	color: #6ed19c;
+	color: #757575   ;
 }
 
 .pricing--pema .pricing__feature-list {
@@ -1386,15 +1385,159 @@ button.trigger span::before {
 	padding: 0.5em 0.2em;
 	color: #fff;
 	border-radius: 5px;
-	background: #42a5f5;
+	background: #6ed19c;
 	-webkit-transition: background-color 0.3s;
 	transition: background-color 0.3s;
 }
 
 .pricing--pema .pricing__action:hover,
 .pricing--pema .pricing__action:focus {
-	background-color: #1e88e5 ;
+	background-color: #00897b  ;
 }
 
 
 
+
+/*About*/
+#about {
+	padding: 80px;
+}
+
+#about .about-heading {
+	text-align: center;
+}
+
+#about .about-heading h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 45px;
+	text-transform: uppercase;
+	color:#000;
+}
+
+#about .about-heading p {
+	margin-top: 20px;
+	line-height: 25px;
+	color: #8e8e8e;
+	margin-bottom: 50px;
+	color:#000;
+}
+
+#about .about-left {
+	position: relative;
+    z-index: 2;
+}
+
+#about .about-right:before {
+	content: "";
+    border: 8px solid #e5eef0;
+	width: 120%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#about .about-right {
+	position: relative;
+	padding: 0 80px 150px 80px;
+}
+
+#about .about-right-heading h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	padding-top: 100px;
+	text-transform: uppercase;
+	color:#000;
+}
+
+#about .about-right-boot:before {
+	content: "\f080";
+	font-family: 'FontAwesome';
+	font-size: 45px;
+	padding: 65px 30px 0 0;
+	float: left;
+	color: #01b1d7;
+}
+
+#about .about-right-wrapper {
+    padding-left: 0 0 50px 78px;
+    position: relative;
+	left: 0;
+	top: 75px;
+}
+
+#about .about-right-wrapper a {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #282828;
+}
+
+#about .about-right-wrapper a:hover {
+	color: #01b1d7;
+}
+
+#about .about-right-wrapper p {
+	line-height: 28px;
+	margin-top: 20px;
+	color: #8e8e8e;
+}
+
+#about .about-right-best:before {
+	content: "\f201";
+	font-family: 'FontAwesome';
+	font-size: 45px;
+	padding: 65px 30px 0 0;
+	float: left;
+	color: #01b1d7;
+}
+
+#about .about-right-support:before {
+	content: "\f025";
+	font-family: 'FontAwesome';
+	font-size: 45px;
+	padding: 65px 30px 0 0;
+	float: left;
+	color: #01b1d7;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+.col-xs-12 {
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  
+.col-md-5 {
+    width: 41.66666667%;
+  }
+  
+  .abourDescription{
+	font-size: 0.60em;
+	font-weight: bold;
+	margin: 0 0 0.5em 0;
+	color: #757575   ;
+	padding-right:150px;
+  }
